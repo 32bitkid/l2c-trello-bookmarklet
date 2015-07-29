@@ -1,1 +1,56 @@
-<a href='javascript: (function() { var s = document.createElement("style"); s.textContent = ".list-card-labels { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } .list-card-labels .card-label { height: auto; padding: 3px 6px; line-height: 1; font-size: 0.75em; width: auto; -webkit-box-flex:1; -webkit-flex-grow:1; -ms-flex-positive:1; flex-grow:1; }"; document.head.appendChild(s); })();'>Drag to bookmarks</a>
+<title>L2C Trello Enhancements</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+:root {
+  font: normal normal 12pt/1.48 sans-serif;
+  width: 66vw;
+  margin: 0 auto;
+}
+
+.bookmarklet {
+  display: block;
+  width: 20ch;
+  border: 2px solid rgba(255,255,255,0.25);
+  padding: 1rem;
+  margin-left: auto; margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #337ab7;
+  transition: background-color 500ms, box-shadow 500ms, border-color 500ms;
+}
+
+.bookmarklet:hover {
+  background-color:  #77acd9;
+  border-color: #337ab7;
+  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.bookmarklet::before {
+  content: '\00f02e';
+  font-family: 'FontAwesome';
+}
+
+img {
+  display: block;
+  margin-left: auto; margin-right: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.instructions { text-align: center;  margin-bottom: 1rem; }
+
+.before { text-align: center; }
+.after  { text-align: center; }
+
+</style>
+<div class="instructions">Drag to the bookmark bar:</div>
+<a class="bookmarklet" href='javascript: (function() { var s = document.createElement("style"); s.textContent = ".list-card-labels { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } .list-card-labels .card-label { height: auto; padding: 3px 6px; line-height: 1; font-size: 0.75em; width: auto; -webkit-box-flex:1; -webkit-flex-grow:1; -ms-flex-positive:1; flex-grow:1; }"; document.head.appendChild(s); })();'>
+  Trello&#x207a; Card&nbsp;Labels
+</a>
+
+<p class="before"> Turn this <img src="before.png"></p>
+<p class="after">...into this <img src="after.png"></p>
